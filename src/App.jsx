@@ -10,8 +10,8 @@ function App() {
     <div >
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/admin"  element={<AdminPanel />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/admin" exact element={<AdminPanel />} />
       </Routes>
     </div>
   );
