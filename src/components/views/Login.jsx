@@ -3,7 +3,7 @@ import { useCustomNavigation } from '../CustomNavigation';
 import { Link } from "react-router-dom"
 import {  faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const BASE_URL = import.meta.env.VITE_URL;
+
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ function Login() {
   const navigate = useCustomNavigation();
 
   const handleLogin = async () => {
-    const response = await fetch(`${BASE_URL}/admin`, {
+    const response = await fetch(`https://barbershopclub.hair/acap/admin`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
