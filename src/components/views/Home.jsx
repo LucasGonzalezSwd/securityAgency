@@ -2,7 +2,7 @@ import '../../index.css'
 import { Footer } from '../Footer'
 import { Navbar } from '../Navbar'
 import img1 from "../../assets/2.jpg"
-
+import img2 from "../../assets/3.jpg"
 import img3 from "../../assets/1.jpg"
 
 
@@ -37,7 +37,7 @@ export const Home = () => {
 
        <div className='flex w-full mt-[2.5rem] mb-[2rem] '>
         <div className='w-2/5 p-[2rem] text-center'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.</div>
-        <img src={img3} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
+        <img src={img2} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
        </div>
        <div className="flex w-full justify-center  mb-[2.5rem]">
              <div className='flex justify-center w-11/12 h-[2rem] border-b-[0.07rem] border-slate-700 '>
