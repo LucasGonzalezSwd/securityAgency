@@ -39,7 +39,7 @@ function Login() {
         <h1 className='mb-[2rem] -mt-[2rem] text-xl'>
            INGRESAR AL PANEL DE ADMIN
         </h1>
-        <Link to="/"><button className='bg-black w-[3.5rem] h-[3.5rem] rounded-full absolute top-0 left-0 ml-[1.5rem] mt-[1rem]'>
+        <Link to="/"><button className='bg-slate-900 w-[3.5rem] h-[3.5rem] rounded-full absolute top-0 left-0 ml-[1.5rem] mt-[1rem]'>
         <FontAwesomeIcon icon={faArrowLeft} style={{color: "#fff",}} />
         </button></Link>
         <div action="" className='flex flex-col justify-center items-center w-2/4 h-2/4 bg-gray-700 rounded-md' >
