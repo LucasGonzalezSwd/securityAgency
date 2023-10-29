@@ -10,7 +10,7 @@ export const Home = () => {
  
     return (
       <div className="w-screen h-full flex flex-col  ">
-        <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] bg-slate-900'>
+        <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] bg-slate-900 h-[2.8rem]'>
          <Navbar/>
       </div>
 
@@ -25,7 +25,7 @@ export const Home = () => {
          <h2  className='mb-[0.7rem] w-3/5 text-5xl '>
          Somos una empresa líder en seguridad
          </h2>
-         <p className='w-3/5'>Como una empresa líder en el ámbito de la seguridad, nos enorgullece ofrecer soluciones integrales y especializadas diseñadas para garantizar la seguridad, la tranquilidad y la protección de cada persona. Nuestra vasta experiencia y un equipo altamente capacitado nos permiten abordar los desafíos de seguridad más complejos en cualquier evento, brindando un servicio que va más allá de las expectativas y estableciendo un estándar de excelencia en la industria de la seguridad para eventos masivos.</p>
+         <p className='w-3/5 text-md'>Como una empresa líder en el ámbito de la seguridad, nos enorgullece ofrecer soluciones integrales y especializadas diseñadas para garantizar la seguridad, la tranquilidad y la protección de cada persona. Nuestra vasta experiencia y un equipo altamente capacitado nos permiten abordar los desafíos de seguridad más complejos en cualquier evento, brindando un servicio que va más allá de las expectativas y estableciendo un estándar de excelencia en la industria de la seguridad para eventos masivos.</p>
          
        </div>
        </div>
@@ -36,7 +36,7 @@ export const Home = () => {
        </div>
 
        <div className='flex w-full items-center mt-[2.5rem] mb-[2rem] '>
-        <div className='w-2/5 p-[1.9rem] text-center text-lg'> <p>
+        <div className='w-2/5 p-[1.9rem] text-center '> <p className='text-md'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.
           </p> </div>
         <img src={img2} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
