@@ -4,12 +4,26 @@ import { Navbar } from '../Navbar'
 import img1 from "../../assets/2.jpg"
 import img2 from "../../assets/3.jpg"
 import img3 from "../../assets/1.jpg"
-
+import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom'
 
 export const Home = () => {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+    
+      });
+    }
+  };
+   
  
     return (
-      <div className="w-screen h-full flex flex-col  ">
+      <div className="w-screen h-full flex flex-col  " id='inicio'>
         <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] bg-slate-900 h-[2.8rem]'>
          <Navbar/>
       </div>
@@ -35,8 +49,10 @@ export const Home = () => {
              </div>
        </div>
 
-       <div className='flex w-full items-center mt-[2.5rem] mb-[2rem] '>
-        <div className='w-2/5 p-[1.9rem] text-center '> <p className='text-md'>
+       <div className='flex w-full items-center mt-[2.5rem] mb-[2rem] ' id='sobre'>
+        <div className='w-2/5 p-[1.9rem] text-center '> 
+        <h2 className='text-2xl -mt-[2rem] mb-[2rem]'>Sobre Nosotros</h2>
+        <p className='text-md'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.
           </p> </div>
         <img src={img2} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
@@ -75,9 +91,15 @@ export const Home = () => {
             </div>
           </div>
 
+        
+
        </div>
-            
-            <div className='mt-[1rem]'>
+       <div className='flex w-full justify-end'>
+          <Link to="/"><button onClick={() => scrollToSection("inicio")} className='bg-slate-900 w-[2.8rem] h-[2.8rem] rounded-full mt-[1rem] mr-[2.5rem]'>
+        <FontAwesomeIcon icon={faArrowUp} style={{color: "#fff",}} />
+        </button></Link>
+          </div>
+            <div className='mt-[1rem]' id='contacto'>
               <Footer/>
             </div>
         
