@@ -39,8 +39,8 @@ export const AdminPanel = () => {
       <div className="mr-[2rem]">
       <SearchBar />
       </div>
-            <div className="flex flex-col justify-center items-center">
-        <button className="bg-slate-700 text-white h-[3rem] rounded-md  w-[8rem] -mt-[2.60rem] " onClick={() => setShowCreateForm(true)}> 
+            <div className="flex flex-col justify-center items-center w-1/2 ">
+        <button className="bg-slate-700 text-white -mt-[2.60rem]  max-[850px]:w-[7.5rem] max-[850px]:h-[2.3rem] h-[3rem] rounded-md  w-[8rem] max-[850px]:-mt-[2.38rem] " onClick={() => setShowCreateForm(true)}> 
           <FontAwesomeIcon  icon={faPlus} size="lg" style={{ color: "#fff" }} /> Nuevo Acap
         </button>
          </div>

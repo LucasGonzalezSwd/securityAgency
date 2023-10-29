@@ -25,13 +25,14 @@ const EditAcap = ({ worker, onFinishEdit }) => {
         <div className="flex w-full justify-end mb-[0.5rem] ">
       <button className="mt-[0.2rem] mr-[0.3rem]  rounded-full  text-black" onClick={handleClose}><FontAwesomeIcon icon={faCircleXmark} size="lg" style={{color: "#fff",}} /></button>
       </div>
-        <div className="flex flex-wrap w-full ">
-        <div className='flex w-full'>
+        <div className="flex flex-wrap w-full   ">
+          
+        <div className='flex w-full '>
 
-        <div className="flex flex-col w-2/6 items-center mb-[1rem]">
+        <div className="flex flex-col  w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Nombre">Nombre </label>
       <input 
-      className='rounded-md h-[2.5rem] w-[12rem] '
+      className='rounded-md h-[2.5rem] w-[12rem] max-[950px]:w-[9.5rem] '
         type="text"
         name="Nombre"
         value={editedData.Nombre}
@@ -41,7 +42,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className="flex flex-col w-2/6 items-center mb-[1rem]">
        <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="Ciudad">Ciudad </label>
       <input 
-      className='rounded-md h-[2.5rem] w-[12rem] '
+      className='rounded-md h-[2.5rem] w-[12rem] max-[950px]:w-[9.5rem]'
         type="text"
         name="Ciudad"
         value={editedData.Ciudad}
@@ -53,7 +54,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
 
        <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="DNI">DNI </label>
       <input 
-      className='rounded-md h-[2.5rem] w-[12rem] '
+      className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
       type="text"
       name="DNI"
       value={editedData.DNI}
@@ -66,7 +67,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className="flex flex-col w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Sanciones">Sanciones </label>
       <select
-        className='rounded-md h-[2.5rem] w-[12rem] '
+        className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
         name="Sanciones"
         value={editedData.Sanciones }
         onChange={(e) => setEditedData({ ...editedData, Sanciones: e.target.value })}
@@ -80,7 +81,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className="flex flex-col w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="FotocopiaDni">Fotocopia Dni </label>
       <select
-        className='rounded-md h-[2.5rem] w-[12rem] '
+        className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
         name="FotocopiaDni"
         value={editedData.FotocopiaDni}
         onChange={(e) => setEditedData({ ...editedData, FotocopiaDni: e.target.value })}
@@ -92,7 +93,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className=" flex flex-col w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="RNR">RNR </label>
       <select
-        className='rounded-md h-[2.5rem] w-[12rem] '
+        className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
         name="RNR"
         value={editedData.RNR}
         onChange={(e) => setEditedData({ ...editedData, RNR: e.target.value })}
@@ -104,7 +105,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className=" flex flex-col w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="AntecedentePenal">Antecedente Penal </label>
       <select
-        className='rounded-md h-[2.5rem] w-[12rem] '
+        className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
         name="AntecedentePenal"
         value={editedData.AntecedentePenal}
         onChange={(e) => setEditedData({ ...editedData, AntecedentePenal: e.target.value })}
@@ -116,7 +117,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className="flex flex-col w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="AptoPsicologico">Apto Psicologico</label>
       <select
-        className='rounded-md h-[2.5rem] w-[12rem] '
+        className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
         name="AptoPsicologico"
         value={editedData.AptoPsicologico}
         onChange={(e) => setEditedData({ ...editedData, AptoPsicologico: e.target.value })}
@@ -128,7 +129,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className=" flex flex-col w-2/6 items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Habilitado">Habilitado:</label>
       <select
-       className='rounded-md h-[2.5rem] w-[12rem] '
+       className='rounded-md h-[2.5rem] max-[950px]:w-[9.5rem] w-[12rem] '
         name="Habilitado"
         value={editedData.Habilitado}
         onChange={(e) => setEditedData({ ...editedData, Habilitado: e.target.value })}
@@ -141,7 +142,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
       <div className=" flex flex-col w-full items-center mb-[1rem]">
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Credencial">Credencial:</label>
       <select
-       className='rounded-md h-[2.5rem] w-[12rem] '
+       className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Credencial"
         value={editedData.Credencial}
         onChange={(e) => setEditedData({ ...editedData, Credencial: e.target.value })}

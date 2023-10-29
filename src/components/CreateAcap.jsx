@@ -71,17 +71,17 @@ const CreateAcap = ({ onClose }) => {
 <div className='flex  w-full '>
 <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="Nombre">Nombre</label>
-        <input className='rounded-md h-[2.5rem] w-[12rem] ' type="text" name="Nombre" value={formData.Nombre} onChange={handleChange} placeholder="Nombre" />
+        <input className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="Nombre" value={formData.Nombre} onChange={handleChange} placeholder="Nombre" />
         </div>
        
         <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Ciudad">Ciudad</label>
-        <input className='rounded-md  h-[2.5rem] w-[12rem] ' type="text" name="Ciudad" value={formData.Ciudad} onChange={handleChange} placeholder="Ciudad" />
+        <input className=' max-[950px]:w-[9.5rem] rounded-md  h-[2.5rem] w-[12rem] ' type="text" name="Ciudad" value={formData.Ciudad} onChange={handleChange} placeholder="Ciudad" />
         </div>
 
         <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="DNI">DNI</label>
-        <input className='rounded-md h-[2.5rem] w-[12rem] ' type="text" name="DNI" value={formData.DNI} onChange={handleChange} placeholder="DNI" />
+        <input className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="DNI" value={formData.DNI} onChange={handleChange} placeholder="DNI" />
         </div>
 </div>
       
@@ -89,7 +89,7 @@ const CreateAcap = ({ onClose }) => {
  <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "htmlFor="Sanciones">Sanciones</label>
         <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Sanciones"
         value={formData.Sanciones}
         onChange={handleChange}
@@ -105,7 +105,7 @@ const CreateAcap = ({ onClose }) => {
      <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
      <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="FotocopiaDni">Fotocopia Dni</label>
       <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="FotocopiaDni"
         value={formData.FotocopiaDni}
         onChange={handleChange}
@@ -117,7 +117,7 @@ const CreateAcap = ({ onClose }) => {
      <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="RNR">RNR</label>
       <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="RNR"
         value={formData.RNR}
         onChange={handleChange}
@@ -131,7 +131,7 @@ const CreateAcap = ({ onClose }) => {
        <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="AntecedentePenal">Antecedente Penal</label>
       <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="AntecedentePenal"
         value={formData.AntecedentePenal}
         onChange={handleChange}
@@ -143,7 +143,7 @@ const CreateAcap = ({ onClose }) => {
       <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "htmlFor="AptoPsicologico">Apto Psicologico</label>
       <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="AptoPsicologico"
         value={formData.AptoPsicologico}
         onChange={handleChange}
@@ -155,7 +155,7 @@ const CreateAcap = ({ onClose }) => {
       <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="Habilitado">Habilitado</label>
       <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Habilitado"
         value={formData.Habilitado}
         onChange={handleChange}
@@ -172,7 +172,7 @@ const CreateAcap = ({ onClose }) => {
 
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "htmlFor="Credencial">Credencial </label>
       <select
-        className='rounded-md  h-[2.5rem] w-[12rem] '
+        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Credencial"
         value={formData.Credencial}
         onChange={handleChange}

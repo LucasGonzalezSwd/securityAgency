@@ -10,7 +10,7 @@ export const Home = () => {
  
     return (
       <div className="w-screen h-full flex flex-col  ">
-        <div className='w-screen flex justify-center bg-slate-900'>
+        <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] bg-slate-900'>
          <Navbar/>
       </div>
 
@@ -35,8 +35,10 @@ export const Home = () => {
              </div>
        </div>
 
-       <div className='flex w-full mt-[2.5rem] mb-[2rem] '>
-        <div className='w-2/5 p-[2rem] text-center'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.</div>
+       <div className='flex w-full items-center mt-[2.5rem] mb-[2rem] '>
+        <div className='w-2/5 p-[1.9rem] text-center text-lg'> <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.
+          </p> </div>
         <img src={img2} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
        </div>
        <div className="flex w-full justify-center  mb-[2.5rem]">
@@ -49,7 +51,7 @@ export const Home = () => {
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
           <img src={img3} className='h-[16rem]  object-cover' />
             <div className='p-[0.5rem]'>
-              <h1>Titulo random</h1>
+              <h1>Titulo aleatorio</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
@@ -58,7 +60,7 @@ export const Home = () => {
             <img src={img3} className='h-[16rem]  object-cover' />
       
             <div className='p-[0.5rem]'>
-              <h1>Titulo random</h1>
+              <h1>Titulo aleatorio</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
@@ -67,7 +69,7 @@ export const Home = () => {
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
           <img src={img3} className='h-[16rem]  object-cover' />
             <div className='p-[0.5rem]'>
-              <h1>Titulo random</h1>
+              <h1>Titulo aleatorio</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>

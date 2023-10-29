@@ -16,8 +16,8 @@ body{
   
 }
 
-p, h1, ul, li {
-  font-family: 'Source Code Pro', monospace;
+p,h2, h1, ul, li {
+  font-family:  monospace;
   font-size:small;
 }
 
