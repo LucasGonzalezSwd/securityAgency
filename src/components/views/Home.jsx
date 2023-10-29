@@ -1,6 +1,9 @@
 import '../../index.css'
 import { Footer } from '../Footer'
 import { Navbar } from '../Navbar'
+import img1 from "../../assets/2.jpg"
+
+import img3 from "../../assets/1.jpg"
 
 
 export const Home = () => {
@@ -12,8 +15,8 @@ export const Home = () => {
       </div>
 
 
-      <div className='bg-blue-900 w-full h-[24rem]'>
-         <h1 className='flex h-full justify-center items-center text-2xl text-white'>Foto A.C.A.P</h1>
+      <div className='bg-blue-900 w-full h-[27rem]'>
+         <img src={img1} className='flex object-cover w-full h-full justify-center items-center text-2xl text-white'/>
       </div>
 
 
@@ -34,7 +37,7 @@ export const Home = () => {
 
        <div className='flex w-full mt-[2.5rem] mb-[2rem] '>
         <div className='w-2/5 p-[2rem] text-center'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.</div>
-        <div className='w-3/5 h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900'>Foto A.C.A.P</div>
+        <img src={img3} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
        </div>
        <div className="flex w-full justify-center  mb-[2.5rem]">
              <div className='flex justify-center w-11/12 h-[2rem] border-b-[0.07rem] border-slate-700 '>
@@ -44,9 +47,7 @@ export const Home = () => {
        <div className='w-full gap-[2rem]  justify-between flex mb-[2rem]'>
           
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
-            <div className='h-[16rem] flex justify-center items-center text-white bg-blue-900'>
-            Foto A.C.A.P
-            </div>
+          <img src={img3} className='h-[16rem]  object-cover' />
             <div className='p-[0.5rem]'>
               <h1>Titulo random</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
@@ -54,9 +55,8 @@ export const Home = () => {
             </div>
           </div>
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
-            <div className='h-[16rem] flex justify-center items-center text-white bg-blue-900'>
-            Foto A.C.A.P
-            </div>
+            <img src={img3} className='h-[16rem]  object-cover' />
+      
             <div className='p-[0.5rem]'>
               <h1>Titulo random</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
@@ -65,9 +65,7 @@ export const Home = () => {
           </div>
 
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
-            <div className='h-[16rem] flex justify-center items-center text-white bg-blue-900'>
-            Foto A.C.A.P
-            </div>
+          <img src={img3} className='h-[16rem]  object-cover' />
             <div className='p-[0.5rem]'>
               <h1>Titulo random</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
