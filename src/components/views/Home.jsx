@@ -39,7 +39,7 @@ export const Home = () => {
          <h2  className='mb-[0.7rem] w-3/5 text-5xl '>
          Somos una empresa líder en seguridad
          </h2>
-         <p className='w-3/5 text-md'>Como una empresa líder en el ámbito de la seguridad, nos enorgullece ofrecer soluciones integrales y especializadas diseñadas para garantizar la seguridad, la tranquilidad y la protección de cada persona. Nuestra vasta experiencia y un equipo altamente capacitado nos permiten abordar los desafíos de seguridad más complejos en cualquier evento, brindando un servicio que va más allá de las expectativas y estableciendo un estándar de excelencia en la industria de la seguridad para eventos masivos.</p>
+         <p className='w-3/5 text-[0.9rem]'>Como una empresa líder en el ámbito de la seguridad, nos enorgullece ofrecer soluciones integrales y especializadas diseñadas para garantizar la seguridad, la tranquilidad y la protección de cada persona. Nuestra vasta experiencia y un equipo altamente capacitado nos permiten abordar los desafíos de seguridad más complejos en cualquier evento, brindando un servicio que va más allá de las expectativas y estableciendo un estándar de excelencia en la industria de la seguridad para eventos masivos.</p>
          
        </div>
        </div>
@@ -52,7 +52,7 @@ export const Home = () => {
        <div className='flex w-full items-center mt-[2.5rem] mb-[2rem] ' id='sobre'>
         <div className='w-2/5 p-[1.9rem] text-center '> 
         <h2 className='text-2xl -mt-[2rem] mb-[2rem]'>Sobre Nosotros</h2>
-        <p className='text-md'>
+        <p className='text-[0.85rem]'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.
           </p> </div>
         <img src={img2} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
@@ -67,8 +67,8 @@ export const Home = () => {
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
           <img src={img3} className='h-[16rem]  object-cover' />
             <div className='p-[0.5rem]'>
-              <h1>Titulo aleatorio</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
+              <h1 className='text-2xl'>Titulo aleatorio</h1>
+              <p className='text-[0.85rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
           </div>
@@ -76,8 +76,8 @@ export const Home = () => {
             <img src={img3} className='h-[16rem]  object-cover' />
       
             <div className='p-[0.5rem]'>
-              <h1>Titulo aleatorio</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
+              <h1 className='text-2xl'>Titulo aleatorio</h1>
+              <p className='text-[0.85rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
           </div>
@@ -85,8 +85,8 @@ export const Home = () => {
           <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
           <img src={img3} className='h-[16rem]  object-cover' />
             <div className='p-[0.5rem]'>
-              <h1>Titulo aleatorio</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
+              <h1 className='text-2xl'>Titulo aleatorio</h1>
+              <p className='text-[0.85rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
           </div>
