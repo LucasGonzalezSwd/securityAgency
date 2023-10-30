@@ -7,8 +7,25 @@ import img3 from "../../assets/1.jpg"
 import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom'
+import MobileNavBar from './MobileNavBAr'
+import { useEffect, useState } from 'react'
 
 export const Home = () => {
+   
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -24,10 +41,9 @@ export const Home = () => {
  
     return (
       <div className="w-screen h-full flex flex-col  " id='inicio'>
-        <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'>
-         <Navbar/>
-      </div>
-
+        <div className='w-full flex items-center h-full justify-center'>
+        {windowWidth <= 460 ? <div className='w-full flex  max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'> <MobileNavBar /></div> : <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'><Navbar  /></div>}
+       </div>
 
       <div className='bg-blue-900 w-full max-[453px]:h-[19.1rem] h-[27rem]'>
          <img src={img1} className='flex object-cover w-full h-full justify-center items-center text-2xl text-white'/>
