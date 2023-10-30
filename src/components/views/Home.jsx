@@ -49,7 +49,7 @@ export const Home = () => {
              </div>
        </div>
 
-       <div className='flex max-[453px]:flex-col w-full items-center max-[453px]:mt-[3.5rem] mt-[2.5rem] mb-[2rem] ' id='sobre'>
+       <div className='flex max-[453px]:flex-col w-full items-center max-[453px]:mt-[4.5rem] mt-[2.5rem] mb-[2rem] ' id='sobre'>
         <div className='w-2/5 max-[453px]:w-full max-[453px]:p-[1rem] p-[1.9rem] text-center '> 
         <h2 className='text-2xl -mt-[2rem] mb-[2rem]'>Sobre Nosotros</h2>
         <p className='text-[0.85rem]'>
