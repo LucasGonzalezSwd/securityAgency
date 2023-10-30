@@ -49,8 +49,8 @@ export const Home = () => {
              </div>
        </div>
 
-       <div className='flex max-[453px]:flex-col w-full items-center max-[453px]:mt-[6.5rem] mt-[2.5rem] mb-[2rem] ' id='sobre'>
-        <div className='w-2/5 max-[453px]:w-full max-[453px]:p-[1rem] p-[1.9rem] text-center '> 
+       <div className='flex max-[453px]:flex-col w-full items-center  mt-[2.5rem] mb-[2rem] ' id='sobre'>
+        <div className='w-2/5 max-[453px]:mt-[2rem]  max-[453px]:w-full max-[453px]:p-[1rem] p-[1.9rem] text-center '> 
         <h2 className='text-2xl -mt-[2rem] mb-[2rem]'>Sobre Nosotros</h2>
         <p className='text-[0.85rem]'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.
