@@ -24,22 +24,22 @@ export const Home = () => {
  
     return (
       <div className="w-screen h-full flex flex-col  " id='inicio'>
-        <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] bg-slate-900 h-[2.8rem]'>
+        <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'>
          <Navbar/>
       </div>
 
 
-      <div className='bg-blue-900 w-full h-[27rem]'>
+      <div className='bg-blue-900 w-full max-[453px]:h-[19.1rem] h-[27rem]'>
          <img src={img1} className='flex object-cover w-full h-full justify-center items-center text-2xl text-white'/>
       </div>
 
 
       <div className='flex w-full justify-center pb-[1.5rem] pr-[1.5rem]  pl-[1.5rem]  pt-[0.8rem] '>
-       <div className=' flex flex-col justify-center w-11/12 mb-[2rem]  border-black  '>
-         <h2  className='mb-[0.7rem] w-3/5 text-5xl '>
+       <div className=' flex flex-col justify-center w-11/12 mb-[2rem] max-[453px]:w-full border-black  '>
+         <h2  className='mb-[0.7rem] w-3/5 text-5xl max-[453px]:w-full max-[453px]:text-4xl'>
          Somos una empresa líder en seguridad
          </h2>
-         <p className='w-3/5 text-[0.9rem]'>Como una empresa líder en el ámbito de la seguridad, nos enorgullece ofrecer soluciones integrales y especializadas diseñadas para garantizar la seguridad, la tranquilidad y la protección de cada persona. Nuestra vasta experiencia y un equipo altamente capacitado nos permiten abordar los desafíos de seguridad más complejos en cualquier evento, brindando un servicio que va más allá de las expectativas y estableciendo un estándar de excelencia en la industria de la seguridad para eventos masivos.</p>
+         <p className='w-3/5 max-[453px]:w-full text-[0.9rem]'>Como una empresa líder en el ámbito de la seguridad, nos enorgullece ofrecer soluciones integrales y especializadas diseñadas para garantizar la seguridad, la tranquilidad y la protección de cada persona. Nuestra vasta experiencia y un equipo altamente capacitado nos permiten abordar los desafíos de seguridad más complejos en cualquier evento, brindando un servicio que va más allá de las expectativas y estableciendo un estándar de excelencia en la industria de la seguridad para eventos masivos.</p>
          
        </div>
        </div>
@@ -49,42 +49,43 @@ export const Home = () => {
              </div>
        </div>
 
-       <div className='flex w-full items-center mt-[2.5rem] mb-[2rem] ' id='sobre'>
-        <div className='w-2/5 p-[1.9rem] text-center '> 
+       <div className='flex max-[453px]:flex-col w-full items-center mt-[2.5rem] mb-[2rem] ' id='sobre'>
+        <div className='w-2/5 max-[453px]:w-full max-[453px]:p-[1rem] p-[1.9rem] text-center '> 
         <h2 className='text-2xl -mt-[2rem] mb-[2rem]'>Sobre Nosotros</h2>
         <p className='text-[0.85rem]'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ut, reiciendis dolores pariatur nisi fugit laboriosam minima dolorum debitis id odit laudantium esse perferendis a non impedit. Nam, animi sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quam quibusdam ullam reprehenderit atque corporis? Quibusdam quos, labore architecto obcaecati beatae exercitationem assumenda laboriosam cumque, temporibus doloremque soluta rem corporis.
           </p> </div>
-        <img src={img2} className='w-3/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
+        <img src={img2} className='w-3/5 max-[453px]:w-4/5 object-cover h-[24rem] mr-[1rem]  flex text-white justify-center items-center bg-blue-900' />
        </div>
        <div className="flex w-full justify-center  mb-[2.5rem]">
              <div className='flex justify-center w-11/12 h-[2rem] border-b-[0.07rem] border-slate-700 '>
              </div>
        </div>
 
-       <div className='w-full gap-[2rem]  justify-between flex mb-[2rem]'>
+       <div className='w-full gap-[2rem] max-[453px]:flex-col  justify-between flex mb-[2rem]'>
           
-          <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
+          <div className='w-1/3 ml-[2rem] mr-[2rem] max-[453px]:w-4/5  flex-col  h-full  '>
           <img src={img3} className='h-[16rem]  object-cover' />
-            <div className='p-[0.5rem]'>
+            <div className='p-[0.5rem] max-[453px]:w-full '>
               <h1 className='text-2xl'>Titulo aleatorio</h1>
               <p className='text-[0.85rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
           </div>
-          <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
+          
+          <div className='w-1/3  max-[453px]:w-4/5 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
             <img src={img3} className='h-[16rem]  object-cover' />
       
-            <div className='p-[0.5rem]'>
+            <div className='p-[0.5rem] max-[453px]:w-full'>
               <h1 className='text-2xl'>Titulo aleatorio</h1>
               <p className='text-[0.85rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
             </div>
           </div>
 
-          <div className='w-1/3 ml-[2rem] mr-[2rem]  flex-col  h-full  '>
+          <div className='w-1/3 ml-[2rem] max-[453px]:w-4/5 mr-[2rem]  flex-col  h-full  '>
           <img src={img3} className='h-[16rem]  object-cover' />
-            <div className='p-[0.5rem]'>
+            <div className='p-[0.5rem] max-[453px]:w-full'>
               <h1 className='text-2xl'>Titulo aleatorio</h1>
               <p className='text-[0.85rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta repellendus exercitationem pariatur magni est dignissimos minima alias, vitae, voluptatibus a nesciunt. Et ab deserunt sapiente. Repellat accusantium perferendis sequi?</p>
          
