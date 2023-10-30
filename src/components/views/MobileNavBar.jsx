@@ -41,9 +41,9 @@ export default function MobileNavBar() {
             <button className='flex items-end' onClick={changeArrow}>
                 <FontAwesomeIcon icon={faBars} size="2xl" style={{ color: "#fff" }} />
                 {pick ? (
-                    <FontAwesomeIcon className='ml-[0.8rem] ' icon={faAngleUp} size="md" style={{ color: "#fff" }} />
+                    <FontAwesomeIcon className='ml-[0.8rem] ' icon={faAngleUp} size="sm" style={{ color: "#fff" }} />
                 ) : (
-                    <FontAwesomeIcon className='ml-[0.8rem]' icon={faAngleDown} size="md" style={{ color: "#fff" }} />
+                    <FontAwesomeIcon className='ml-[0.8rem]' icon={faAngleDown} size="sm" style={{ color: "#fff" }} />
                 )}
             </button>
             </div>
