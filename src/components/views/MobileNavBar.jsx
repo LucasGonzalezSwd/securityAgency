@@ -22,7 +22,7 @@ const products = [
 
 
 
-export default function MobileNavBar() {
+export default function MobileNavBAr() {
     const [pick, setPick] = useState(false);
 
     const changeArrow = () => {
