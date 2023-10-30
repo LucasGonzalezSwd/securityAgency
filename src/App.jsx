@@ -3,7 +3,7 @@ import {Home} from './components/views/Home';
 import { AdminPanel } from './components/views/AdminPanel';
 import Login from './components/views/Login'; // Importa 'Home' como un componente
 import './App.css';
-import MobileNavBar from './components/views/MobileNavBAr';
+import MobileNavBar from './components/views/MobileNavBar';
 
 
 function App() {
