@@ -36,7 +36,7 @@ export default function MobileNavBAr() {
       <nav className=" flex max-w-7xl items-center justify-start p-6 lg:px-8" aria-label="Global">
         <Popover.Group className=" lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 outline-none">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 outline-none">
          <div className='flex'>
             <button className='flex items-end' onClick={changeArrow}>
                 <FontAwesomeIcon icon={faBars} size="2xl" style={{ color: "#fff" }} />
@@ -47,7 +47,7 @@ export default function MobileNavBAr() {
                 )}
             </button>
             </div>
-            </Popover>
+            </Popover.Button>
 
             <Transition
               as={Fragment}
