@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom';
 import MobileNavBar from './MobileNavBar';
 import { useEffect, useState } from 'react'
-import { NavBar } from "../NavBar";
+import { NavBar } from "../Navbar";
 
 export const Home = () => {
    
