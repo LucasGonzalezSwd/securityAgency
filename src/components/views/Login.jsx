@@ -3,7 +3,7 @@ import { useCustomNavigation } from '../CustomNavigation';
 import { Link } from "react-router-dom"
 import {  faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Swal from 'sweetalert2';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -24,14 +24,16 @@ function Login() {
       if (data.isAdmin) {
         // El usuario es un administrador, realiza la redirección a "/admin" o al panel de administración
         // Puedes utilizar useHistory o cualquier enrutador que estés utilizando
-       navigate('/admin');
+        Swal.fire('¡Inicio de sesión exitoso!', '', 'success').then(() => {
+          navigate('/admin');
+        });
         
       
       } else {
-        alert('Credenciales incorrectas');
+        Swal.fire('Error al iniciar sesión', '', 'error');
       }
     } else {
-      alert('Error al iniciar sesión');
+      Swal.fire('Credenciales incorrectas', '', 'error');
     }
   }
   return (
