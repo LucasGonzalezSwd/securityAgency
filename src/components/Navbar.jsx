@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 
-export const Navbar = () => {
+export const NavBar = () => {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
