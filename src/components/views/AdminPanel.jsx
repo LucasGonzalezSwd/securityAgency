@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EditAcap from "../EditAcap";
 import SearchBar from '../SearchBar';
 import CreateAcap from "../CreateAcap";
-
+import Swal from 'sweetalert2';
 export const AdminPanel = () => {
   const dispatch = useDispatch();
   const acaps = useSelector((state) => state.acaps);
@@ -19,6 +19,7 @@ export const AdminPanel = () => {
 
   const handleDeleteAcap = (id) => {
     dispatch(fetchDeleteAcap(id));
+    Swal.fire('', '¡Agente Eliminado!', 'warning');
   };
 
   const handleStartEditAcap = (worker) => {
@@ -30,6 +31,7 @@ export const AdminPanel = () => {
   };
   const handleCreateFormClose = () => {
     setShowCreateForm(false);
+    
   };
  
   const isEditing = (acap) => editingWorker && editingWorker.id === acap.id;

@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { fetchCreateAcap } from '../redux/actions';
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Swal from 'sweetalert2';
+
 /* eslint-disable-next-line react/prop-types */
 const CreateAcap = ({ onClose }) => {
   const dispatch = useDispatch();
@@ -38,13 +40,16 @@ const CreateAcap = ({ onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!formData.Nombre || !formData.Ciudad || !formData.DNI) {
+      Swal.fire('Error', 'Por favor, complete Nombre, Ciudad y DNI.', 'error');
+      return;
+    }
     const dataToSend = {
       ...formData,
     
     };
 
     dispatch(fetchCreateAcap([dataToSend]));
-    
     setFormData({
       Nombre: '',
       Ciudad: '',
@@ -57,6 +62,11 @@ const CreateAcap = ({ onClose }) => {
       Habilitado: 'si',
       Credencial: 'si',
     })
+    
+    Swal.fire('Éxito', '¡El nuevo agente ha sido creado!', 'success');
+
+    onClose();
+
   };
 
    
@@ -71,17 +81,17 @@ const CreateAcap = ({ onClose }) => {
 <div className='flex  w-full '>
 <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="Nombre">Nombre</label>
-        <input className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="Nombre" value={formData.Nombre} onChange={handleChange} placeholder="Nombre" />
+        <input  className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="Nombre" value={formData.Nombre} onChange={handleChange} placeholder="Nombre" />
         </div>
        
         <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Ciudad">Ciudad</label>
-        <input className=' max-[950px]:w-[9.5rem] rounded-md  h-[2.5rem] w-[12rem] ' type="text" name="Ciudad" value={formData.Ciudad} onChange={handleChange} placeholder="Ciudad" />
+        <input   className=' max-[950px]:w-[9.5rem] rounded-md  h-[2.5rem] w-[12rem] ' type="text" name="Ciudad" value={formData.Ciudad} onChange={handleChange} placeholder="Ciudad" />
         </div>
 
         <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="DNI">DNI</label>
-        <input className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="DNI" value={formData.DNI} onChange={handleChange} placeholder="DNI" />
+        <input   className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="DNI" value={formData.DNI} onChange={handleChange} placeholder="DNI" />
         </div>
 </div>
       

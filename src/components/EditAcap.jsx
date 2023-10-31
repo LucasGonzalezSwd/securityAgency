@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { fetchPutAcap } from "../../src/redux/actions";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Swal from 'sweetalert2';
 /* eslint-disable-next-line react/prop-types */
 const EditAcap = ({ worker, onFinishEdit }) => {
   const dispatch = useDispatch();
@@ -11,6 +12,7 @@ const EditAcap = ({ worker, onFinishEdit }) => {
   const handleUpdateAcap = () => {
     /* eslint-disable-next-line react/prop-types */
     dispatch(fetchPutAcap(worker.id, editedData));
+    Swal.fire('Éxito', '¡Agente actualizado!', 'success');
     onFinishEdit(); // Llamamos a la función onFinishEdit en el componente padre para indicar que la edición ha terminado.
   };
   const handleClose = () => {
