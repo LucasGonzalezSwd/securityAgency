@@ -21,6 +21,11 @@ p,h2, h1, ul, li {
   font-size:small;
 }
 
+
+
+
+
+
 .square::before {
   content: "\25A0"; /* Unicode para un cuadrado negro */
   font-size: 2rem;

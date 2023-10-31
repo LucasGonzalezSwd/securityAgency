@@ -7,6 +7,7 @@ import {
   UserIcon,
 } from '@heroicons/react/24/outline';
 
+
 const products = [
   { name: 'Sobre nosotros', description: 'Descripción de la empresa', icon: UserIcon, id:"sobre"},
   { name: 'Contacto', description: 'Envíe un WhatsApp para más información', icon: CursorArrowRaysIcon, id:"contacto" },
@@ -47,17 +48,18 @@ export default function MobileNavBar() {
               </button>
             </div>
           </div>
-
+          
           {pick && (
-            <div className="absolute ml-[0.45rem] -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+          
+            <div className="absolute ml-[0.45rem] -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 ">
               <div className="p-4">
                 {products.map((item) => (
                   <div
-                    key={item.name}
+                  key={item.name}
                     /* eslint-disable-next-line react/no-unknown-property */
                     onClick={() => scrollToSection(item.id)}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                  >
+                    >
                     <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                     </div>
@@ -72,9 +74,10 @@ export default function MobileNavBar() {
                 ))}
               </div>
             </div>
+       
           )}
         </div>
       </nav>
-    </header>
+      </header>
   );
 }

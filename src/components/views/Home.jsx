@@ -49,7 +49,8 @@ export const Home = () => {
         <div className='w-full flex  max-[850px]:h-[3.5rem] max-[460px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'>  {isMobile ? (
             <MobileNavBar scrollToSection={scrollToSection} />
           ) : (
-            <NavBar scrollToSection={scrollToSection} />
+          <div className='flex w-full justify-center items-center'>
+            <NavBar scrollToSection={scrollToSection} /></div>
           )}</div> 
        </div>
 
