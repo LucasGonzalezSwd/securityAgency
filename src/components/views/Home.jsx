@@ -7,24 +7,26 @@ import img3 from "../../assets/1.jpg"
 import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom'
-// import MobileNavBar from './MobileNavBAr'
-// import { useEffect, useState } from 'react'
+import MobileNavBar from './MobileNavBAr'
+import { useEffect, useState } from 'react'
 
 export const Home = () => {
    
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // useEffect(() => {
-  //   const handleWindowResize = () => {
-  //     setWindowWidth(window.innerWidth);
-  //   };
 
-  //   window.addEventListener('resize', handleWindowResize);
 
-  //   return () => {
-  //     window.removeEventListener('resize', handleWindowResize);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
 
 
   const scrollToSection = (sectionId) => {
@@ -42,7 +44,7 @@ export const Home = () => {
     return (
       <div className="w-screen h-full flex flex-col  " id='inicio'>
         <div className='w-full flex items-center h-full justify-center'>
-       <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'><Navbar  /></div>
+        {windowWidth <= 460 ? <div className='w-full flex  max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'> <MobileNavBar scrollToSection={scrollToSection}/></div> : <div className='w-screen flex items-center justify-center max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'><Navbar  /></div>}
        </div>
 
       <div className='bg-blue-900 w-full max-[453px]:h-[19.1rem] h-[27rem]'>
@@ -113,8 +115,8 @@ export const Home = () => {
        </div>
        <div className='flex w-full justify-end'>
           <Link to="/"><button onClick={() => scrollToSection("inicio")} className='bg-slate-900 w-[2.8rem] h-[2.8rem] rounded-full mt-[1rem] mr-[2.5rem]'>
-        <FontAwesomeIcon icon={faArrowUp} style={{color: "#fff",}} />
-        </button></Link>
+  <FontAwesomeIcon icon={faArrowUp} style={{color: "#fff"}} />
+</button></Link>
           </div>
             <div className='mt-[1rem]' id='contacto'>
               <Footer/>
