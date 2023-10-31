@@ -11,7 +11,7 @@ const BASE_URL = import.meta.env.VITE_URL;
 
 export function fetchAllAcaps() {
   return async function (dispatch) {
-    const re = await axios(`https://barbershopclub.hair/acap/acaps`);
+    const re = await axios(`${BASE_URL}/acaps`);
     dispatch({
       type: FETCH_ALL_ACAPS_SUCCESS,
       payload: re.data,
