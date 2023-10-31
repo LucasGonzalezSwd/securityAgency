@@ -7,7 +7,7 @@ import img3 from "../../assets/1.jpg"
 import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom'
-import MobileNavBar from './MobileNavBAr'
+import MobileNavBAr from './MobileNavBAr'
 // import { useEffect, useState } from 'react'
 
 export const Home = () => {
@@ -44,7 +44,7 @@ export const Home = () => {
     return (
       <div className="w-screen h-full flex flex-col  " id='inicio'>
         <div className='w-full flex items-center h-full justify-center'>
-        <div className='w-full flex  max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'> <MobileNavBar scrollToSection={scrollToSection}/></div> 
+        <div className='w-full flex  max-[850px]:h-[3.5rem] max-[453px]:h-[3.88rem] bg-slate-900 h-[2.8rem]'> <MobileNavBAr scrollToSection={scrollToSection}/></div> 
        </div>
 
       <div className='bg-blue-900 w-full max-[453px]:h-[19.1rem] h-[27rem]'>
