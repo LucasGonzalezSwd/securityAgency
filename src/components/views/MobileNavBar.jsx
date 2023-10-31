@@ -14,7 +14,7 @@ const products = [
 ];
 
 /* eslint-disable-next-line react/prop-types */
-export default function MobileNavBAr() {
+export default function MobileNavBar() {
   const [pick, setPick] = useState(false);
 
   const scrollToSection = (sectionId) => {
