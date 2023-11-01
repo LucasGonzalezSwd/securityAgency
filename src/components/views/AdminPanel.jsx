@@ -50,8 +50,8 @@ export const AdminPanel = () => {
 
         {showCreateForm && <CreateAcap onClose={handleCreateFormClose} />} 
          </div>
-      <div className="flex w-full justify-center mt-[2rem] ">
-        <ul className="flex flex-col w-full ml-[0.5rem] mr-[0.5rem] flex-wrap border-b-2 border-slate-700 rounded-bl-md rounded-br-md">
+      <div className="flex w-full  justify-center mt-[2rem] ">
+        <ul className="flex flex-col bg-[#DCDCF8] w-full ml-[0.5rem] mr-[0.5rem] flex-wrap border-b-2 border-slate-700 rounded-bl-md rounded-br-md">
           <div className="flex items-center border-2 rounded-tl-md rounded-tr-md border-b-0 border-slate-700 h-[2.8rem]">
             <p className="flex justify-center pl-[1rem] overflow-hidden items-center w-1/5 h-[2.8rem] border-r-2 border-slate-700">Nombre </p>
             <p className="flex items-center pl-[0.7rem] overflow-hidden w-2/12 h-[2.8rem] justify-center border-r-2 border-slate-700">Ciudad </p>
