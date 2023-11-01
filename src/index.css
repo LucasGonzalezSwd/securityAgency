@@ -21,7 +21,10 @@ p,h2, h1, ul, li {
   font-size:small;
 }
 
-
+.selected {
+  background-color: rgb(220, 220, 248);
+  /* Cambia el color de fondo a gris claro */
+}
 
 
 

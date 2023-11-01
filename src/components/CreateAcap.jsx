@@ -76,30 +76,30 @@ const CreateAcap = ({ onClose }) => {
         <button className='-mt-[0.5rem] mb-[0.5rem]  -mr-[0.5rem]' onClick={onClose}> <FontAwesomeIcon className="rounded-full" size="xl" icon={faCircleXmark} style={{ color: "#fff" }} /></button> 
         </div>
     
-      <form className='flex flex-wrap w-full' onSubmit={handleSubmit}>
+      <form className='flex max-[767px]:flex-col flex-wrap w-full' onSubmit={handleSubmit}>
 
-<div className='flex  w-full '>
-<div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+<div className='flex max-[767px]:flex-col w-full '>
+<div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="Nombre">Nombre</label>
-        <input  className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="Nombre" value={formData.Nombre} onChange={handleChange} placeholder="Nombre" />
+        <input  className='max-[767px]:w-4/5 max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="Nombre" value={formData.Nombre} onChange={handleChange} placeholder="Nombre" />
         </div>
        
-        <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+        <div className='flex flex-col w-2/6 max-[767px]:w-full items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "  htmlFor="Ciudad">Ciudad</label>
-        <input   className=' max-[950px]:w-[9.5rem] rounded-md  h-[2.5rem] w-[12rem] ' type="text" name="Ciudad" value={formData.Ciudad} onChange={handleChange} placeholder="Ciudad" />
+        <input   className='max-[767px]:w-4/5 max-[950px]:w-[9.5rem] rounded-md  h-[2.5rem] w-[12rem] ' type="text" name="Ciudad" value={formData.Ciudad} onChange={handleChange} placeholder="Ciudad" />
         </div>
 
-        <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+        <div className='flex flex-col w-2/6 max-[767px]:w-full items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="DNI">DNI</label>
-        <input   className=' max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="DNI" value={formData.DNI} onChange={handleChange} placeholder="DNI" />
+        <input   className='max-[767px]:w-4/5 max-[950px]:w-[9.5rem] rounded-md h-[2.5rem] w-[12rem] ' type="text" name="DNI" value={formData.DNI} onChange={handleChange} placeholder="DNI" />
         </div>
 </div>
       
- <div className='flex w-full '>
- <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+ <div className='flex max-[767px]:flex-col  w-full '>
+ <div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
         <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "htmlFor="Sanciones">Sanciones</label>
         <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className=' max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Sanciones"
         value={formData.Sanciones}
         onChange={handleChange}
@@ -112,10 +112,10 @@ const CreateAcap = ({ onClose }) => {
         </div>
         
       
-     <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+     <div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
      <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="FotocopiaDni">Fotocopia Dni</label>
       <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className='max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="FotocopiaDni"
         value={formData.FotocopiaDni}
         onChange={handleChange}
@@ -124,10 +124,10 @@ const CreateAcap = ({ onClose }) => {
         <option value="no">No</option>
       </select>
      </div>
-     <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+     <div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="RNR">RNR</label>
       <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className='max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="RNR"
         value={formData.RNR}
         onChange={handleChange}
@@ -137,11 +137,11 @@ const CreateAcap = ({ onClose }) => {
       </select>
       </div>
  </div>
-       <div className='flex  w-full'>
-       <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+       <div className='flex max-[767px]:flex-col w-full'>
+       <div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="AntecedentePenal">Antecedente Penal</label>
       <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className='max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="AntecedentePenal"
         value={formData.AntecedentePenal}
         onChange={handleChange}
@@ -150,10 +150,10 @@ const CreateAcap = ({ onClose }) => {
         <option value="no">No</option>
       </select>
       </div>
-      <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+      <div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "htmlFor="AptoPsicologico">Apto Psicologico</label>
       <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className=' max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="AptoPsicologico"
         value={formData.AptoPsicologico}
         onChange={handleChange}
@@ -162,10 +162,10 @@ const CreateAcap = ({ onClose }) => {
         <option value="no">No</option>
       </select>
       </div>
-      <div className='flex flex-col w-2/6 items-center mb-[1rem]'>
+      <div className='flex flex-col max-[767px]:w-full w-2/6 items-center mb-[1rem]'>
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] " htmlFor="Habilitado">Habilitado</label>
       <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className='max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Habilitado"
         value={formData.Habilitado}
         onChange={handleChange}
@@ -182,7 +182,7 @@ const CreateAcap = ({ onClose }) => {
 
       <label className="flex items-center text-white  mr-[0.2rem] ml-[0.2rem] "htmlFor="Credencial">Credencial </label>
       <select
-        className='rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
+        className='max-[767px]:w-4/5 rounded-md max-[950px]:w-[9.5rem] h-[2.5rem] w-[12rem] '
         name="Credencial"
         value={formData.Credencial}
         onChange={handleChange}
@@ -195,7 +195,7 @@ const CreateAcap = ({ onClose }) => {
        
        
       <div className='flex w-full justify-center'>
-        <button className='bg-white mt-[1rem] p-[0.5rem] w-[6.5rem] rounded-md' type="submit">Crear</button>
+        <button className='bg-white max-[767px]:w-3/5 mt-[1rem] p-[0.5rem] w-[6.5rem] rounded-md' type="submit">Crear</button>
       </div>
         
       </form>
